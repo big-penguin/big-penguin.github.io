@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Big Penguin</title>
+        <style type="text/css">
+			body {
+				font: 15px arial, sans-serif;
+				background-color: #1f2024;
+				color: #DFDFDF;
+			}
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+			iframe { 
+				width: 100%
+			}
+			
+            p,h2,h3,ul {
+                margin: 40px auto;
+                max-width: 1000px;
+                line-height: 1.6;
+                font-size: 18px;
+				padding: 0px 20px
+            }
+			
+			p { 
+				background-color: #343539;
+				padding: 20px 50px
+			}
+			
+			h2 {
+				font-size: 24px
+			}
+
+            h1 {
+				background-color: #343539;
+				color: #DCDCDC;
+                line-height: 1.6;
+				margin: 0px 0px;
+				font-size: 24px;
+				max-width: 2160px;
+				text-align: center;
+				padding: 40px 40px
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                My stuff, I guess &nbsp; &nbsp; | &nbsp; &nbsp; <a href="https://www.youtube.com/channel/UCggsbPR_cLnsHhWXTM_Sg1g">Youtube</a> &nbsp; <a href="https://www.thingiverse.com/kinetic-mcf/">Thingiverse</a> &nbsp; <a href="https://github.com/big-penguin">Github</a>
+            </h1>
+        </header>
+		<h2>
+			Finished Projects:
+		</h2>
+		<p><strong>Simple Servo Controller - </strong><a href="https://github.com/big-penguin/simple-servo-controller">Github</a>
+		<br><br> A basic Arduino sketch for controlling a motor with a potentiometer for positional feedback. The control code avoids use of a PID loop and is supposed to be easy to understand for newbies.
+		</p>
+		<p><strong>Drone Copy Delivery System</strong>
+		<br><br> Ever printed off a school assignment only to realize the printer is 10 feet away and you have to get off your chair, walk across the room, grab the paper, then bring it back to your desk? Don't you wish the paper would just magically appear in front of you? Well wish no more! This Automatic Document Delivery System(TM) has you covered. 
+		<br><br><iframe width="560" height="600" src="https://www.youtube.com/embed/eaBXx61x6Qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+		<p><strong>KEW Converter - </strong><a href="https://github.com/big-penguin/kew-converter">Github</a>
+		<br><br> An application created for Cloud County Community College. They have Flash-based lessons they use for many of their wind-energy classes. Due to the impending death of Flash, I decided to look for a way to port the lessons to a more modern format. Originally the tool was intended to output a complete video/HTML5 lesson. However, much of the imagery in the lessons was made in Flash as dynamic scripts as opposed to static images, which couldn't be ripped out. Because of this, the tool only extracts what it can, and leaves it at that (so the narration and images can be re-used in an updated lesson format).
+		</p>
+		<p><strong>Speaker Box Robot</strong>
+		<br><br> A basic driving robot built out of a cheapo house subwoofer. Its original iteration had a 5DOF robotic arm affixed ot the front, but the piss-poor stepper motors combined with my absolutey wonderful design skills at the time meant it couldn't really do anything useful. The wheels were also poorly built and prone to failure.
+		<br><br> <img src="botv1.PNG" alt="robot overview">
+		<br><br> Here's some closeups of the arm and drive wheels for V1:
+		<br><br> <img src="arm.PNG" alt="robot overview">
+		<br><br> <img src="drive.PNG" alt="robot overview">
+		<br><br> Later on I rebuilt the robot, removing the arm and replacing the existing wheels with more robust ones. This version, powered by an Arduino mega and Android tablet, was demoed at a local 4-H project demo, where the kids got to drive it around. It still works today. It also had a motion control function, but the code doesn't seem to work anymore.
+		<br><br> <img src="botv2.JPG" alt="robot overview">
+		<br><br> The robot served as my introduction to ROS. I used it to control the robot over the network as well as some other fun stuff.
+		<br><br> <img src="botv2-2.JPG" alt="robot overview">
+		</p>
+		<h2>
+			Ongoing Projects:
+		</h2>
+		<p><strong>ServoCtrl - </strong><a href="https://github.com/big-penguin/servoctrl">Github</a>
+		<br><br> A project to control RC Servos with 3D modelling software Blender, with use of an Arduino board. This allows for easier creation of smooth, life-like movement for animatronics and FX, since one can rig up a model of the device in Blender and animate it like any other 3D model.
+		<br><br> <img src="servoctrl.png" alt="ServoCTRL development" width=1000px>
+		<br><br> I've made a set of moving eyes for testing this project, which have since been expanded to an entire head. Here's a video of the eyes being tested (via RC): 
+		<br><br> <iframe width="1000" height="600" src="https://www.youtube.com/embed/j3ok9grzXH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+    </body>
 </html>
